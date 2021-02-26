@@ -6,3 +6,6 @@ FRAMEWORKS :
 
 DJANGO - BOOTSTRAP
 
+DEPLOY HEROKU :
+
+https://alfredo-estoque.herokuapp.com/
