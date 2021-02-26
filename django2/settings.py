@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import django_heroku
 from pathlib import Path
 import os
 import dj_database_url
@@ -154,5 +154,5 @@ EMAIL_PORT = 587  * normalmente se a porta for segura, mas a hospedagem informa
 EMAIL_USER_TSL = True
 EMAIL_HOST_PASSWORD = senha do email
 '''
-
+django_heroku.settings(locals())
 
