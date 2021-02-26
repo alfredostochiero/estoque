@@ -1,5 +1,5 @@
 {% load bootstrap4 %}
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        {% if produtos %}
         <h1>Produtos</h1>
         <table class="table">
             <thead class="thead-dark">
@@ -52,6 +53,12 @@
             </tbody>
 
         </table>
+        {% else %}
+
+        <h1> Não há produtos cadastrados em estoque </h1>
+
+        {% endif %}
+
     </div>
 
 {% bootstrap_javascript jquery='full' %}
